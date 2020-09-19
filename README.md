@@ -8,7 +8,7 @@ The extension is a script that runs everytime the browser's page loads, if the s
 
 ## Installation
 
-- First Download the extension clicking here => (https://github.com/lnardon/OverflowElementFinder/archive/master.zip)
+- First Download the extension clicking here => (https://github.com/lnardon/OverflowElementFinderExtension/archive/master.zip)
 - Unzip the pack and go to your chrome extensions tab
 - Enable Developer Mode on the page
 - Click on the "Load Unpacked" Button and choose the folder of the extension
