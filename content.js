@@ -1,12 +1,11 @@
-chrome.runtime.onMessage.addListener(gotMessage);
-
-function gotMessage(message, sender, sendResponse) {
-  if (message.txt === "find") {
-    let elements = [];
-    elements.forEach.call(document.querySelectorAll("*"), (el) => {
-      if (el.offsetWidth > document.documentElement.offsetWidth) {
-        console.log(`Overflow caused by: ${el}`);
-      }
-    });
+let elements = [];
+let called = false;
+elements.forEach.call(document.querySelectorAll("*"), (el) => {
+  if (el.offsetWidth > document.documentElement.offsetWidth) {
+    called = true;
+    console.log(`Overflow caused by: ${el}`);
   }
+});
+if (!called) {
+  console.log("No element overflow found");
 }
